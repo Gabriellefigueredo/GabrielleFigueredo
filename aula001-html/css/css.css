@@ -1,0 +1,26 @@
+html, body  {   
+    margin: 0;
+    padding: 0;
+}
+nav{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 40px;
+    background: #e50d9d;
+}
+img.logosite{
+    float: left;
+    width: 150px;
+}
+nav a {
+    background: block;
+    width: auto;
+    width: 60px;
+    padding: 4px;
+    float: left;
+    line-height: 32px;
+    background: #d87fbb;
+    color: black;
+}
