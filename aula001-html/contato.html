@@ -10,7 +10,9 @@
 
 <body>
     <center>
-        <img src="img/images.png" alt="Logo Entra21" width="150px">
+        <img src="img/images.png" alt="Logo" width="270px">
+
+        
     <nav>
          <a href="index.html">Home</a>
          <a href="empresa.html">Empresa</a>
@@ -19,55 +21,50 @@
          <a href="contato.html">Contato</a>
          <a href="novo.html">Novo</a>
     </nav>
-        
+         
+
+    <table border="1" width="100%">
+
+        <tr>
+            <td>Nome</td>
+            <td>E-mail</td>
+            <td>WhatsApp</td>
+            <td>Setor</td>
+            <td>Mensagem</td>
+        </tr>
+            <td>Nome:</td>
+            
+    
+        <tr>
+            <center> <td> APROVADOS(AS) ENTRA21 -EDIÇÃO 2022</td> </center>
+            <td>Em Blumenau existem leis e incentivos para a área de empreendedorismo e inovação. </td>
+            <td><img src="https://cdn.sonicadigital.com.br/blusoft-inst/storage/custom-page/2968/800x600-6256d3d968c58.png" alt="">  </td>
+        </tr>
+
     <form action="cadastro.cs" method="post">
          <p align="center" label>Nome:</label>
             <input type="text" name="Nome"  placeholder="Informe seu nome" required></p>
 
-         <p align="center" label>CPF:</label>
-            <input type="number" name="CPF"  placeholder="Informe seu CPF" required></p>
+         <p align="center" label>E-mail</label>
+            <input type="number" name="E-mail:"  placeholder="Informe seu E-mail" required></p>
 
-         <p align="center" label>RG:</label>
-            <input type="number" name="RG"  placeholder="Informe seu RG" required></p>
+         <p align="center" label>WhatsApp</label>
+            <input type="number" name="WhatsApp"  placeholder="Informe seu WhatsApp" required></p>
 
-         <p align="center" label>E-mail:</label>
-                <input type="text" name="E-mail"  placeholder="Informe seu E-mail" required></p>
-    
+            <p><select name="Setor">
+                <option value="">Selecione o Setor</option>
+                <option value="Lógistica">Lógistica</option>
+                <option value="Financeiro">Financeiro</option>
+                <option value="RH">RH</option>
+                <option value="Marketing">Marketing</option>
+            </select>   
+            </p>
+            
+         <label for="Mensagem"> Mensagem:
+        </label>
 
-         <p align="center" label>Rua:</label>
-             <input type="text" name="Rua" placeholder="Informe sua Rua " required></p>
-
-
-         <p align="center" label>N°:</label>
-                <input type="text" name="N°"  placeholder="Informe seu número" required></p>
-   
-           
-         <p align="center" label>Bairro:</label>
-            <input type="text" name="Bairro"  placeholder="Informe seu Bairro" required></p>
-    
-         <p align="center" label>Cidade:</label>
-            <input type="text" name="Cidade"  placeholder="Informe sua Cidade"></p>
-    
-            <p><select name="estado">
-                <option value="">Selecione o Estado</option>
-                <option value="SC">Santa Catarina</option>
-                <option value="AC">Acre</option>
-                <option value="AL">Alogoas</option>
-                <option value="AP">Amapa</option>
-                <option value="PR">Paraná</option>
-                <option value="BC">Balneario Camburiu</option></select>
-    
-            <p align="center" label>Sexo:</label>
-            <span>
-                <input type="radio" name="sexo" value="F" required>Feminino
-                <input type="radio" name="sexo" value="M">Masculino </p>
-            </span>
-    
-            <p align="center" label>Nacionalidade:</label>
-            <span>
-                <input type="radio" name="nacionalidade" value="brasileiro" required>Brasileiro
-                <input type="radio" name="nacionalidade" value="outro">Outro</p>
-            </span>
+        <textarea id="Mensagem" name="Mensagem">
+        </textarea>
     
             <br>
             <button type="submit">Finalizar</button>
